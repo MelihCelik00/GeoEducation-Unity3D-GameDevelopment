@@ -21,7 +21,9 @@ public class PlayerController : MonoBehaviour
 
         lootCount = GameObject.FindGameObjectsWithTag("Loot").Length;
     }
-
+    //Update: Most things
+    //Fixed Update: Physics things
+    //LateUpdate: Things that need to happen after update/right before the camera renders
     
     void FixedUpdate()
     {
