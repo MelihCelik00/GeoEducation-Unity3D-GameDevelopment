@@ -27,6 +27,8 @@ public class PlayerController : MonoBehaviour
     
     void FixedUpdate()
     {
+        //GetAxis is smoothed based on the “sensitivity” setting so that value gradually changes from 0 to 1, or 0 to -1.
+        //Whereas GetAxisRaw will only ever return 0, -1, or 1 exactly (assuming a digital input such as a keyboard or joystick button).
         float horizontal = Input.GetAxisRaw("Horizontal"); // Sol: -1 No click: 0  Sag: 1
         float vertical = Input.GetAxisRaw("Vertical");
         
